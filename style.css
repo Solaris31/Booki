@@ -137,13 +137,28 @@ form{
     background: #DEEBFF;
 }
 
-
 #budjet, #familial, #romantique, #animaux{
-    height: 50px;
-    border-radius: 25px;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
     margin-right: 45px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+#budjet{
+    width: 198px;
+}
+
+#familial{
+    width: 150px;
+}
+
+#romantique{
+    width: 200px;
+}
+
+#animaux{
+    width: 256px;
 }
 
 form{
@@ -152,7 +167,7 @@ form{
 
 .fa-money-bill-wave{
     position:absolute;
-    left:115px;
+    left:118px;
     top:15px;
 }
 
@@ -164,13 +179,65 @@ form{
 
 .fa-heart{
     position:absolute;
-    left:622px;
+    left:575px;
     top:15px;
 }
 
 .fa-dog{
     position:absolute;
-    left:875px;
+    left:820px;
     top:15px;
 }
 
+#texteEconomique, #texteFamilial, #texteRomantique, #texteAnimaux{
+    display:inline-block;
+}
+
+#texteEconomique{
+    position:absolute;
+    left:155px;
+    top: 12px;
+}
+
+#texteFamilial{
+    position: absolute;
+    left:395px;
+    top: 12px;
+}
+
+#texteRomantique{
+    position: absolute;
+    left:610px;
+    top:12px
+}
+
+#texteAnimaux{
+    position:absolute;
+    left:856px;
+    top:12px;
+}
+
+#boiteIconeInformation{
+    position:relative;
+}
+
+#cercle{
+    position:absolute;
+    top:-5px;
+    left:1px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid #D9D9D9;
+}
+
+.fa-info{
+    position:absolute;
+    left:13px;
+    color: #0065FC;
+    scale:60%;
+}
+
+#label3{
+    margin-left: 40px;
+}

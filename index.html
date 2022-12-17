@@ -28,7 +28,7 @@
 
         <!-- Bloc champ de recherche + filtres -------------------------------------------------------------------------->
         <nav>
-            <h1 id="label1">Trouvez votre hebergement pour des vacances de reve</H1>
+            <h1 id="label1">Trouvez votre hebergement pour des vacances de reve</h1>
             <h2 id="label2">En plein centre-ville ou en pleine nature</h2>
             <form method="post" action="">
                 <input type="text" name="geolocalisation" id="geolocalisation"></input>
@@ -41,17 +41,31 @@
 
             <form method="post" action="" id="formulaire2">
                 <p id="filtres">Filtres</p>
+                
                 <input type="text" name="budjet" id="budjet"></input>
                 <i class="fa-solid fa-money-bill-wave"></i>
+                <p id="texteEconomique">Economique</p>
+
                 <input type="text" name="familial" id="familial"></input>
                 <i class="fa-solid fa-person"></i>
+                <p id="texteFamilial">Familial</p>
+
                 <input type="text" name="romantique" id="romantique"></input>
                 <i class="fa-solid fa-heart"></i>
+                <p id="texteRomantique">Romantique</p>
+                
                 <input type="text" name="animaux" id="animaux"></input>
                 <i class="fa-sharp fa-solid fa-dog"></i>
+                <p id="texteAnimaux">Animaux autorisés</p>
             </form>
-            <p><i class="fa-solid fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+
+            <div id="boiteIconeInformation">  <!-- Icone infos bulle -->
+                <i class="fa-solid fa-info"></i>
+                <div id="cercle"></div>
+            </div>
+            <p id="label3">Plus de 500 logements sont disponibles dans cette ville</p>
         </nav>
+
 
 
         <section>
@@ -116,15 +130,9 @@
                 <h3>Nous contacter</h3>
             </div>
         </footer>
-
-
-
-
-        
-        <!-- 
-        <i class="fa-solid fa-star"></i>
-         -->
-        
-
     </body>
+
+    <i class="fa-solid fa-star"></i>
+
+
 </html>
