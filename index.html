@@ -1,118 +1,130 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <title>Agence de voyage Booki</title>
-    <script src="https://kit.fontawesome.com/bd7f06eaf5.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <header>
-        <!-- Logo + Hebergements et activités -->
-        <nav id="entete">
-            <div id="logo">
-                <img src="./images/logo/Booki.png" width="61px" height="19px" top="44px">
-            </div>
-            <nav id="selectionHebergementOuActivités">
-                <a href="#" id="hebergements">Hébergements</a>
-                <a href="#" id="activites">Activités</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <title>Agence de voyage Booki</title>
+        <script src="https://kit.fontawesome.com/bd7f06eaf5.js" crossorigin="anonymous"></script>
+    </head>
+
+
+    <body>
+        <!-- Entete Logo + Hebergements et activités -------------------------------------------------------------------->
+        <header>
+            <nav id="entete">
+                <div id="logo">
+                    <img src="./images/logo/Booki.png" width="61px" height="19px" top="44px">
+                </div>
+                <nav id="selectionHebergementOuActivités">
+                    <a href="#" id="hebergements">Hébergements</a>
+                    <a href="#" id="activites">Activités</a>
+                </nav>
             </nav>
+        </header>
+
+
+        <!-- Bloc champ de recherche + filtres -------------------------------------------------------------------------->
+        <nav>
+            <h1 id="label1">Trouvez votre hebergement pour des vacances de reve</H1>
+            <h2 id="label2">En plein centre-ville ou en pleine nature</h2>
+            <form method="post" action="">
+                <input type="text" name="geolocalisation" id="geolocalisation"></input>
+                <input type="text" name="ville" placeholder="Marseille, France" id="ville"></input>
+                <input type="submit" value="Rechercher" id="rechercher"></input>
+                <i class="fa-solid fa-location-dot"></i>
+            </form>
+
+
+
+            <form method="post" action="" id="formulaire2">
+                <p id="filtres">Filtres</p>
+                <input type="text" name="budjet" id="budjet"></input>
+                <i class="fa-solid fa-money-bill-wave"></i>
+                <input type="text" name="familial" id="familial"></input>
+                <i class="fa-solid fa-person"></i>
+                <input type="text" name="romantique" id="romantique"></input>
+                <i class="fa-solid fa-heart"></i>
+                <input type="text" name="animaux" id="animaux"></input>
+                <i class="fa-sharp fa-solid fa-dog"></i>
+            </form>
+            <p><i class="fa-solid fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
         </nav>
-    </header>
 
 
-    <nav>
-        <!-- Champ de recherche + filtres -->
-        <h1 id="label1">Trouvez votre hebergement pour des vacances de reve</H1>
-        <h2 id="label2">En plein centre-ville ou en pleine nature</h2>
+        <section>
+            <!-- Affichage des resultats de la recherche dhebergements --------------------------------------------------->
             <div>
-                <label for="Filtres">
-                <input type="box">
-                <input type="box">
-                <input type="box">
+                <p>Hébergement a Marseille</p>
+                <section class="affichageDe3Hebergement">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </section>
+                <section class="affichageDe3Hebergement" >
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </section>
+                <a href="#">Affichez plus</a>
             </div>
-        <p><img src="">Plus de 500 logements sont disponibles dans cette ville</p>
-    </nav>
+            
 
-    <main>
-        <!-- Affichage des resultats de la recherche -->
-        <div>
-            <p>Hébergement a Marseille</p>
+            <!-- Affichage des resultats les plus populaires ------------------------------------------------------------>
+            <aside>
+                <section id="affichageLesPlusPopulaires">
+                    <p>Les plus populaires</p>
+                    <i class="fa-solid fa-chart-line"></i>
+                </section>
+                <div></div>
+                <div></div>
+                <div></div>           
+            </aside>
+        </section>
+
+
+        <!-- Affichage des resultats des activites a proximites ---------------------------------------------------------->
+        <section>
+            <h1>Activités a Marseille</h1>
             <div>
                 <div></div>
                 <div></div>
                 <div></div>
+                <div></div>
+            </div>
+        </section>
+
+
+        <!-- Pied de page avec 3 liens dinformations : A propos, hebergements, Assistance-------------------------------->
+        <footer>
+            <div>
+                <h2>A propos</h2>
+                <h3>Fonctionnement du site</h3>
+                <h3>Conditions generales</h3>
+                <h3>Donnees et confidentialité</h3>
             </div>
             <div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <h2>Nos hebergements</h2>
+                <h3>Charte qualité</h3>
+                <h3>Proposer votre hotel</h3>
             </div>
-            <a href="#">Affichez plus</a>
-        </div>
+            <div>
+                <h2>Assistance</h2>
+                <h3>Centre d'aide</h3>
+                <h3>Nous contacter</h3>
+            </div>
+        </footer>
+
+
+
+
         
-        <!-- Affichage des resultats les plus populaires -->
-        <aside>
-            <div>
-                <p>Les plus populaires</p>
-                <img src="#">
-            </div>
-            <div></div>
-            <div></div>
-            <div></div>           
-        </aside>
-    </main>
+        <!-- 
+        <i class="fa-solid fa-star"></i>
+         -->
+        
 
-    <section>
-        <h1>Activités a Marseille</h1>
-        <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </section>
-    
-
-
-    <footer>
-        <!-- 3 liens dinformation : A propos, hebergements, Assistance -->
-        <div>
-            <h2>A propos</h2>
-            <h3>Fonctionnement du site</h3>
-            <h3>Conditions generales</h3>
-            <h3>Donnees et confidentialité</h3>
-        </div>
-        <div>
-            <h2>Nos hebergements</h2>
-            <h3>Charte qualité</h3>
-            <h3>Proposer votre hotel</h3>
-        </div>
-        <div>
-            <h2>Assistance</h2>
-            <h3>Centre d'aide</h3>
-            <h3>Nous contacter</h3>
-        </div>
-    </footer>
-
-
-
-
-    
-    <i class="fa-sharp fa-solid fa-dog"></i>
-    <i class="fa-solid fa-info"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-person"></i>
-    <i class="fa-solid fa-chart-line"></i>
-    <i class="fa-solid fa-heart"></i>
-    <i class="fa-solid fa-money-bill-wave"></i>
-
-
-</body>
-
-
-
+    </body>
 </html>

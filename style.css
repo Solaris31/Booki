@@ -2,6 +2,7 @@
     font-family: 'Raleway', sans-serif;
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 
 body{
@@ -22,39 +23,36 @@ body{
     align-items: center;
 }
 
-
-
 a{
     font-size:16px;
     color:#000000;
     text-decoration:none;
     border-top: 2px solid transparent;
+    padding-top:40px;
 }
 
 a:hover{
     border-top:2px solid #0065fc;
     color:#0065fc;
-
+    padding-top:40px;
 }
-
 
 #selectionHebergementOuActivités{
     display:flex;
-    align-items:center;
     justify-content: space-evenly;
     width: 381px;
 }
-
 
 #hebergements{
     width: 162px;
     height: 19px;
     text-align: center;
+    align-items: center;
 }
 
 #activites{
     width: 112px;
-    height: 19px;
+    height:19px;
     text-align: center;
 }
 
@@ -63,7 +61,6 @@ a:hover{
     font-weight: 700;
     line-height: 26px;
     margin-bottom:8px;
-
 }
 
 #label2{
@@ -71,5 +68,109 @@ a:hover{
     font-size: 16px;
     line-height: 19px;
     margin-bottom:20px;
+}
+
+form{
+    margin-bottom: 31px;
+    position: relative;
+}
+
+
+
+#geolocalisation{
+    border-radius:15px 0 0 15px;
+    background: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+#ville{
+    border-radius: 15px;
+    border: 1px solid #F2F2F2;
+    width: 332px;
+    height: 49px;
+    color: #000000;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    padding-left:67px;
+    outline: none;
+}
+
+#rechercher{
+    border-radius: 0px 15px 15px 0px;
+    background: #0065FC;
+    align-items: center;
+    font-weight: 700;
+    color: white;
+    font-size: 18px;
+    line-height: 21px;
+    width: 132px;
+    height: 49px;
+    border: 1px solid #0065FC;
+    position: absolute;
+    left:286px;
+}
+
+.fa-location-dot{
+    position:absolute;
+    left:19px;
+    top:15px;
+}
+
+#filtres{
+    vertical-align:middle;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+    width: 54px;
+    height: 21px;
+    margin:0 30px 0 8px;
+    display:inline-block;
+}
+
+#budjet:hover, #familial:hover, #romantique:hover, #animaux:hover{
+    background: #DEEBFF;
+}
+
+
+#budjet, #familial, #romantique, #animaux{
+    height: 50px;
+    border-radius: 25px;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    margin-right: 45px;
+}
+
+form{
+    position: relative;
+}
+
+.fa-money-bill-wave{
+    position:absolute;
+    left:115px;
+    top:15px;
+}
+
+.fa-person{
+    position:absolute;
+    left:370px;
+    top:15px;
+}
+
+.fa-heart{
+    position:absolute;
+    left:622px;
+    top:15px;
+}
+
+.fa-dog{
+    position:absolute;
+    left:875px;
+    top:15px;
 }
 
