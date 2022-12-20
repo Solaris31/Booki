@@ -56,13 +56,18 @@ a:hover{
     width: 10.12em;
     height: 19px;
     text-align: center;
-    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
 }
 
 #activites{
     width: 7em;
     height:19px;
     text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
 }
 
 .label1{
@@ -89,8 +94,6 @@ form{
     margin-bottom: 31px;
     position: relative;
 }
-
-
 
 #geolocalisation{
     border-radius:15px 0 0 15px;
@@ -209,8 +212,7 @@ form{
 
 .fa-chart-line{
     position:relative;
-    margin-right:2.6em;
-    padding-top: 46px;
+    margin-left:4.3em;
 }
 
 
@@ -281,7 +283,7 @@ form{
     margin-bottom: 60px;
 }
 
-.fond2GrisArrondi{
+.fond3GrisArrondi{
     background: #F2F2F2;
     border-radius: 20px;
     width: 420px;
@@ -315,10 +317,10 @@ form{
 
 .fond1BlancArrondi{
     width: 12.3em;
-    height: 199px;
+    height: 203px;
     background-color:#FFFFFF;
     border-radius: 20px;
-    margin-bottom: 16px;
+    margin-bottom: 30px;
     box-shadow: 5px 5px 20px 1px rgba(100, 100, 129, 0.1);
 }
 
@@ -340,6 +342,7 @@ form{
 
 .position7{
     margin-left: 1em;
+    margin-bottom: 5px;
 }
 
 .label4{
@@ -351,6 +354,7 @@ form{
 
 .position8{
     margin-left: 1.1em;
+    margin-bottom: 5px;
 }
 
 .conteneurEtoiles{
@@ -373,7 +377,11 @@ form{
     color:#F2F2F2;
 }
 
-.fond2GrisArrondi{
+#fond2GrisArrondi{
+    width: 20.85em;
+    height: 625px;
+    background: #F2F2F2;
+    border-radius: 20px;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
@@ -393,13 +401,13 @@ form{
     color: #000000;
 }
 .position3{
-    margin: 32px 0 44px 46px;
+    margin: 10px 0 66px 46px;
 }
 
 #conteneurActivitesAMarseille{
     display:flex;
     flex-direction: column;
-    width: 67.1em;
+    width: 68em;
     height: 493px;
     background-color:#FFFFFF;
     margin-bottom: 60px;
@@ -417,9 +425,16 @@ form{
     height: 493px;
 }
 
-.fond2BlancArrondi{
+.fondBlancArrondi{
     width: 15.1em;
     height: 444.5px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 3px rgba(70, 70, 87, 0.1);
+}
+
+.fond2BlancArrondi{
+    width:15.1em;
+    height: 444px;
     border-radius: 20px;
     box-shadow: 5px 5px 10px 3px rgba(70, 70, 87, 0.1);
 }
@@ -466,3 +481,60 @@ form{
 .position11{
     margin:0 7.5em 0 3.4em;
 }
+
+#fond5GrisArrondi{
+    display:flex;
+    flex-direction: column;
+    height: 625px;
+    width: 21.1em;
+    background: #F2F2F2;
+    border-radius: 20px;
+}
+
+#enteteLesPlusPopulaires{
+    display:flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    width: 21em;
+    height: 94px;
+}
+
+.fond5BlancArrondi{
+    display:flex;
+    flex:row;
+    width: 17.5em;
+    height: 144px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px 1px rgba(100, 100, 129, 0.1);
+}
+
+#conteneurLesPlusPopulaires{
+    display:flex;
+    flex-direction: column;
+    height: 498px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.scaleDeLimage3{
+    height: 144px;
+    width: 145px;
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 0px 0px 20px;
+    object-fit: cover;
+}
+
+.conteneurDescriptifLesPlusPopulaires{
+    display:flex;
+    flex-direction: column;
+}
+
+.position12{
+    margin: 13px 1em 0 1.1em;
+}
+
+.position13{
+    margin: 38px 1em 0 0.2em;
+}
+
