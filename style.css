@@ -1,3 +1,4 @@
+
 *{
     font-family: 'Raleway', sans-serif;
     margin:0;
@@ -5,13 +6,13 @@
     box-sizing: border-box;
 }
 
+
 body{
-    margin:0px 77px 59px 55px;
+    margin-left:55px;
 }
 
-#entete{
+header{
     height: 99px;
-    width: 1400px;
     display:flex;
     flex-direction:row;
     justify-content:space-between;
@@ -19,7 +20,7 @@ body{
 }
 
 #logo2{
-    width:61px;
+    width:3.1em;
     height:19px;
     margin-top: 44px;
 }
@@ -27,7 +28,7 @@ body{
 #conteneurLogo{
     display: flex;
     align-items: center;
-    width:61px;
+    width:3.8em;
     height:19px;
     top:44px;
 }
@@ -48,13 +49,13 @@ body{
 
 #selectionHebergementOuActivités{
     display:flex;
-    justify-content: space-evenly;
-    width: 23.8em;
+    justify-content:flex-end;
 }
 
 #hebergements{
     width: 10.12em;
     height: 19px;
+    margin-right:2em;
     text-align: center;
     font-weight: 500;
     font-size: 16px;
@@ -210,7 +211,7 @@ form{
 }
 
 .fa-person{
-    left:16.4em;
+    left:16.3em;
     top:15px;
 }
 
@@ -257,9 +258,11 @@ form{
 
 
 .fond1GrisArrondi{
+    display: flex;
+    flex-direction:column;
     background: #F2F2F2;
     border-radius: 20px;
-    width: 880px;
+    width: 44em;
     height: 626px;
     margin-right: 45px;
     margin-bottom: 60px;
@@ -293,7 +296,8 @@ form{
 }
 
 .position{
-    padding:42px 0 23px 40px;
+    margin:42px 0 0 40px;
+    height: 49px;
 }
 
 
@@ -369,11 +373,12 @@ form{
     justify-content: space-between;
 }
 
-.conteneurDesHebergements{
+#conteneurDesCartesHebergements{
     display:flex;
     flex-direction:row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    height: 406px;
 }
 
 .label5{
@@ -383,9 +388,7 @@ form{
     color: #000000;
     text-decoration: none;
 }
-.position3{
-    margin: 10px 0 66px 46px;
-}
+
 
 #conteneurActivitesAMarseille{
     display:flex;
@@ -404,7 +407,7 @@ form{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 67.1em;
+    width:67.1em ;
     height: 493px;
 }
 
@@ -520,4 +523,42 @@ form{
 .position13{
     margin: 38px 1em 0 0.2em;
 }
+
+
+
+
+
+/* Breakpoint de fixation : on bloque la largeur max a 1400 px pour les tres grands ecrans */
+/* 1400px moins la marge a gauche */
+@media screen and (min-width:1400px){
+    body{
+        /* 1400px moins la marge de 55px a gauche */
+        width:1355px; 
+        }
+}
+
+
+
+/* Breakpoint pour les grands écrans */
+@media screen and (min-width:992px) and (max-width:1400px){
+
+          
+    
+}
+
+
+
+/* Breakpoint pour tablettes */
+@media screen and (min-width: 768px) and (max-width:991px){
+
+
+}
+
+
+
+/* Breakpoint pour telephones portables */
+@media screen and (max-width:767px){
+
+}
+
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,14 +14,12 @@
     <body>
         <!-- Entete Logo + Hebergements et activités -->
         <header>
-            <nav id="entete">
-                <div id="conteneurLogo">
-                    <img src="./images/logo/Booki.png" id="logo2" alt="Booki, la référence pour vos hébergements de vacances">
-                </div>
-                <nav id="selectionHebergementOuActivités">
-                    <a href="#" id="hebergements">Hébergements</a>
-                    <a href="#" id="activites">Activités</a>
-                </nav>
+            <div id="conteneurLogo">
+                <img src="./images/logo/Booki.png" id="logo2" alt="Booki, la référence pour vos hébergements de vacances">
+            </div>
+            <nav id="selectionHebergementOuActivités">
+                <a href="#" id="hebergements">Hébergements</a>
+                <a href="#" id="activites">Activités</a>
             </nav>
         </header>
 
@@ -30,19 +28,19 @@
         <article>
             <h1 class="label1 position4">Trouvez votre hébergement pour des vacances de rêve</h1>
             <h2 class="label2 position5">En plein centre-ville ou en pleine nature</h2>
-            <form method="post" action="">
+            <form method="post" action="#">
                 <div id="fondGrisGeolocalisation"><i class="fa-solid fa-location-dot"></i></div>    
                 <input type="text" name="ville" placeholder="Marseille, France" id="ville">
                 <input type="submit" value="Rechercher" id="rechercher">
             </form>
 
 
-            <form method="post" action="" id="formulaire2">                
+            <form method="post" action="#" id="formulaire2">                
                 <p class="label0">Filtres</p>
                 <input type="button" id="budjet" value="       Economique">
                 <i class="fa-solid fa-money-bill-wave"></i>
 
-                <input type="button" id="familial" value="      Familial">
+                <input type="button" id="familial" value="     Familial">
                 <i class="fa-solid fa-person"></i>
 
                 <input type="button" id="romantique" value="       Romantique">
@@ -63,8 +61,10 @@
         <!-- Affichage des resultats de la recherche dhebergements -->
         <main class="affichageResultatHebergementsEtLesPlusPopulaires">
             <section class="fond1GrisArrondi">
-                <p class="label1 position">Hébergements à Marseille</p>
-                <div class="conteneurDesHebergements">
+
+                <h1 class="label1 position">Hébergements à Marseille</h1>
+                <!-- Affichage de 6 cartes -->
+                <div id="conteneurDesCartesHebergements">
                     <div class="fond1BlancArrondi">
                         <img src="./Images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="scaleDeLimage" alt="Auberge conviviale">
                         <p class="label3 position7">Auberge a la Canebière</p>
@@ -103,6 +103,7 @@
                             <div class="etoile"><i class="fa-solid fa-star derniereEtoile"></i></div>
                         </div>
                     </div>
+
                     <div class="fond1BlancArrondi">
                         <img src="./Images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg" class="scaleDeLimage" alt="Cet hotel fait face a la mer !-">
                         <p class="label3 position7">Hôtel de la mer</p>
@@ -142,13 +143,15 @@
                         </div>
                     </div>
                 </div>
-                <a href="#" class="label5 position3">Affichez plus</a>
+                <a href="#" class="label5 position">Affichez plus</a>
             </section>
+
+
 
             <!-- Affichage des resultats les plus populaires -->
             <aside id="fond5GrisArrondi">
                 <div id="enteteLesPlusPopulaires">
-                    <p class="label1 position">Les plus populaires</p>
+                    <h1 class="label1 position">Les plus populaires</h1>
                     <i class="fa-solid fa-chart-line position"></i>
                 </div>
                 <div id="conteneurLesPlusPopulaires">
