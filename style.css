@@ -155,80 +155,48 @@ form{
 }
 
 #formulaire2{
-    width: 49.5em;
+    width: 46em;
     display:flex;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;;
 }
 
-#budjet:hover, #familial:hover, #romantique:hover, #animaux:hover{
-    background: #DEEBFF;
+
+.economique:hover, .familial:hover, .romantique:hover, .animaux:hover{
+    background-color: #DEEBFF;
 }
 
-#budjet, #familial, #romantique, #animaux{
-    border: 2px solid #D9D9D9;
+.economique, .familial, .romantique, .animaux{
     background-color: #FFFFFF;
     border-radius: 25px;
-    margin-right: 1.9em;
+    border: 2px solid #D9D9D9;
     height: 50px;
-    position: relative;
-    left:1.4em;
     font-weight: 700;
     font-size: 17px;
     line-height: 20px;
-    color: #000000;
-
-}
-
-
-input#budjet{
-    width: 10.9em;
-}
-
-#familial{
-    width:8.4em;
-}
-
-#romantique{
-    width: 10.65em;
-}
-
-#animaux{
-    width: 14.3em;
-}
-
-form{
-    position: relative;
 }
 
 .fa-solid{
-    position:absolute;
     color:#0065FC;
 }
-
-.fa-money-bill-wave{
-    left:5em;
-    top:15px;
+.economique{
+    width: 175px;
+}
+.familial{
+    width: 130px;
+}
+.romantique{
+    width: 175px;
+}
+.animaux{
+    width: 226px;
 }
 
-.fa-person{
-    left:16.3em;
-    top:15px;
+.fa-money-bill-wave, .fa-person, .fa-heart, .fa-dog{
+    padding-right:12px;
 }
 
-.fa-heart{
-    left:24.7em;
-    top:15.1px;
-}
-
-.fa-dog{
-    left:35.7em;
-    top:15.1px;
-}
-
-.fa-chart-line{
-    position:relative;
-    left:4.3em;
-}
 
 #boiteIconeInformation{
     position:relative;
@@ -262,16 +230,17 @@ form{
     flex-direction:column;
     background: #F2F2F2;
     border-radius: 20px;
-    width: 44em;
+    width:auto;
     height: 626px;
-    margin-right: 45px;
+    margin-right: 52px;
     margin-bottom: 60px;
+    padding: 0 40px 0 40px;
 }
 
 .fond3GrisArrondi{
     background: #F2F2F2;
     border-radius: 20px;
-    width: 420px;
+    /* width: 420px; */
     height: 625px;
 }
 
@@ -296,7 +265,7 @@ form{
 }
 
 .position{
-    margin:42px 0 0 40px;
+    margin:40px 0 0 0;
     height: 49px;
 }
 
@@ -308,6 +277,7 @@ form{
     border-radius: 20px;
     margin-bottom: 30px;
     box-shadow: 5px 5px 20px 1px rgba(100, 100, 129, 0.1);
+    position:relative;
 }
 
 
@@ -321,8 +291,8 @@ form{
 
 .label3{
     font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 17px;
+    line-height: 20px;
     color: #000000;
 }
 
@@ -343,14 +313,22 @@ form{
     margin-bottom: 5px;
 }
 
-.conteneurEtoiles{
+.conteneurEtoilesPopulaires{
     display:flex;
     flex-direction:row;
-}
-
-.conteneurEtoiles{
+    position:absolute;
+    top: 115px;
     margin-left:0.3em;
 }
+
+.conteneurEtoilesHebergements{
+    display:flex;
+    flex-direction:row;
+    position:absolute;
+    top: 175px;
+    margin-left:0.3em;
+}
+
 
 .etoile{
     width: 12px;
@@ -376,9 +354,11 @@ form{
 #conteneurDesCartesHebergements{
     display:flex;
     flex-direction:row;
-    justify-content: space-evenly;
+    overflow-x:hidden;
+    overflow-y: hidden;
+    justify-content: space-between;
     flex-wrap: wrap;
-    height: 406px;
+    height: 500px;
 }
 
 .label5{
@@ -393,10 +373,10 @@ form{
 #conteneurActivitesAMarseille{
     display:flex;
     flex-direction: column;
-    width: 68em;
-    height: 493px;
+    height: 504px;
     background-color:#FFFFFF;
     margin-bottom: 60px;
+    overflow:hidden;
 }
 
 .position2{
@@ -407,8 +387,7 @@ form{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    width:67.1em ;
-    height: 493px;
+    height: 498px;
 }
 
 .fondBlancArrondi{
@@ -434,25 +413,28 @@ form{
 
 .label6{
     font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 17px;
+    line-height: 20px;
     color: #000000;
     margin: 13px 0 21px 19px;
+
 }
 
 #fond3GrisCarre{
     display:flex;
     flex-direction:row;
-    width: 67.1em;
+    justify-content: space-around;
+    width: auto;
     height: 191px;
     background: #F2F2F2;
 }
 
 .dimensionsColomneInformationFooter{
-    width: 10em;
-    height: 130px;
+    width: auto;
+    height: 182px;
     display: flex;
     flex-direction: column;
+
 }
 
 .position9{
@@ -464,24 +446,21 @@ form{
     margin-bottom: 8px;
 }
 
-.position11{
-    margin:0 7.5em 0 3.4em;
-}
 
 #fond5GrisArrondi{
     display:flex;
     flex-direction: column;
     height: 625px;
-    width: 21.1em;
+    width: auto;
     background: #F2F2F2;
     border-radius: 20px;
+    padding: 0 40px 0 37px;
 }
 
 #enteteLesPlusPopulaires{
     display:flex;
     flex-direction: row;
-    /* justify-content: space-around; */
-    width: 21em;
+    justify-content: space-between;
     height: 94px;
 }
 
@@ -514,6 +493,7 @@ form{
 .conteneurDescriptifLesPlusPopulaires{
     display:flex;
     flex-direction: column;
+    position: relative;
 }
 
 .position12{
@@ -524,6 +504,26 @@ form{
     margin: 38px 1em 0 0.2em;
 }
 
+.label7{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.label8{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.position15{
+    margin-top:45px;
+
+}
+
+.position11{
+    margin-right: 20px;
+}
 
 
 
@@ -534,12 +534,12 @@ form{
     body{
         /* 1400px moins la marge de 55px a gauche */
         width:1355px; 
-        }
+    }
 }
 
 
 
-/* Breakpoint pour les grands écrans */
+/* Breakpoint pour les écrans PC */
 @media screen and (min-width:992px) and (max-width:1400px){
 
           
@@ -550,7 +550,101 @@ form{
 
 /* Breakpoint pour tablettes */
 @media screen and (min-width: 768px) and (max-width:991px){
+    .affichageResultatHebergementsEtLesPlusPopulaires{
+        flex-direction:column;
+    }
 
+    #formulaire2{
+        width: auto;
+    }
+
+    .fond1GrisArrondi{
+        margin-right:0px
+    }
+
+    #conteneurLesPlusPopulaires{
+        flex-direction:row;
+    }
+
+    #enteteLesPlusPopulaires{
+        width: auto;
+
+    }
+
+    .fond1GrisArrondi{
+        margin-bottom: 53px;
+    }
+
+    #fond5GrisArrondi{
+        height: 278px;
+    }
+
+    .position{
+        height: 26px;
+        margin:34px 0 26px 0;
+    }
+
+    #conteneurLesPlusPopulaires{
+        align-items: flex-start;
+    }
+
+    .conteneurEtoiles{
+        margin:0 20px 0 4px;
+    }
+
+    .fond5BlancArrondi{
+        width: 252px;
+    }
+
+    .scaleDeLimage3{
+        width: 106px;
+        height: 144px;
+    }
+
+    .newFormat1{
+        width: 111px;
+        height: auto;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 7px;
+    }
+
+    .newFormat2{
+        margin-top: 0;
+    }
+
+    .conteneurEtoiles{
+        position:absolute;
+        top: 115px;
+    }
+
+    .fond5BlancArrondi:nth-child(3){
+        overflow: hidden;
+    }
+
+    #conteneurActivitesAMarseille{
+        margin-top: 70px;
+    }
+
+    #conteneurfond2Blanc{
+        /* justify-content: space-between; */
+        height: 267px;
+    }
+
+    .fond2BlancArrondi{
+        width:9.1em;
+        height: 267px;
+    }
+
+    .scaleDeLimage2{
+        width: 182px;
+        height: 211px;
+    }
+
+    .position14{
+        margin-top: 6px;
+    }
 
 }
 
