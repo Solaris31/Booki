@@ -47,7 +47,7 @@ header{
     padding-top:40px;
 }
 
-#selectionHebergementOuActivités{
+#selectionHebergementOuActivites{
     display:flex;
     justify-content:flex-end;
 }
@@ -81,6 +81,28 @@ header{
     margin-bottom:8px;
 }
 
+#formulaire1{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    width: 332px;
+}
+
+.fa-magnifying-glass, #boiteIconeLoupe{
+    visibility: hidden;
+}
+
+
+#rechercherAvecLoupe{
+    border-radius: 0px 15px 15px 0px;
+    background: #0065FC;
+    align-items: center;
+    width: 49px;
+    height: 49px;
+    border: 1px solid #0065FC;
+}
+
+
 #ville::placeholder{
     font-weight: 700;
     font-size: 18px;
@@ -91,7 +113,7 @@ header{
 i.fa-location-dot{
     color: #000000;
     position:absolute;
-    left:0.9em;
+    left:18px;
     top:15px;
 }
 
@@ -127,24 +149,40 @@ form{
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
-    padding-left:67px;
+    padding-left:65px;
     outline: none;
 }
 
 #rechercher{
     border-radius: 0px 15px 15px 0px;
     background: #0065FC;
-    align-items: center;
     font-weight: 700;
     color: white;
     font-size: 18px;
     line-height: 21px;
-    width: 7.2em;
+    width: 270px;
     height: 49px;
     border: 1px solid #0065FC;
     position: relative;
-    left:-5.8em;
+    left:-1em;
 }
+
+#boiteIconeLoupe{
+    width: 49px;
+    height: 49px;
+    position:absolute;    
+}
+
+
+.fa-magnifying-glass{
+    color:#FFFFFF !important;
+    width: 20px;
+    height: 20px;
+    position:relative;
+    left: 270px;
+    top:-40px;
+}
+
 
 .label0{
     font-weight: 700;
@@ -528,23 +566,15 @@ form{
 
 
 
-/* Breakpoint de fixation : on bloque la largeur max a 1400 px pour les tres grands ecrans */
+/* Breakpoint de fixation : on bloque la largeur max a 1401 px pour les tres grands ecrans */
 /* 1400px moins la marge a gauche */
-@media screen and (min-width:1400px){
+@media screen and (min-width:1401px){
     body{
         /* 1400px moins la marge de 55px a gauche */
-        width:1355px; 
+        width:1355px;
     }
 }
 
-
-
-/* Breakpoint pour les écrans PC */
-@media screen and (min-width:992px) and (max-width:1400px){
-
-          
-    
-}
 
 
 
@@ -628,7 +658,6 @@ form{
     }
 
     #conteneurfond2Blanc{
-        /* justify-content: space-between; */
         height: 267px;
     }
 
@@ -645,14 +674,96 @@ form{
     .position14{
         margin-top: 6px;
     }
-
 }
 
 
 
 /* Breakpoint pour telephones portables */
 @media screen and (max-width:767px){
+    body{
+        margin-left:0;
+    }
+
+
+    header{
+        flex-direction: column;
+    }
+
+
+    #conteneurLogo{
+        margin:0 auto;
+    }
+
+
+    #hebergements:hover, #activites:hover{
+        justify-content: space-between;
+        border-top:none;
+        border-bottom: 2px solid #0065fc;
+        color:#0065fc;
+        padding-bottom:30px;
+        padding-top:0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+
+    #hebergements, #activites{
+        width: 50%;
+        color:#000000;
+        border-top: none;
+        border-bottom: 2px solid transparent;
+        padding-bottom:30px;
+        margin-right:0;
+        padding-top:0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .label1{
+        margin-left: 20px;
+    }
+
+    .label2{
+        margin-left: 20px;
+        margin-bottom: 36px;
+    }
+
+
+    #rechercher{
+        border-radius: 0px 15px 15px 0px;
+        background: #0065FC;
+        font-weight: 700;
+        color: white;
+        font-size: 18px;
+        line-height: 21px;
+        width: 7.2em;
+        height: 49px;
+        border: 1px solid #0065FC;
+        position: relative;
+        }
+
+
+    #formulaire1{
+        margin-left: 20px;
+    }
+
+
+    #rechercher{
+        visibility: hidden;
+    }
+
+    #rechercherAvecLoupe{
+        visibility:visible;
+        width: 49px;
+        height: 49px;
+        position:relative;
+        left:14.9em;
+    }
+
+    .fa-magnifying-glass{
+        visibility: visible;
+    }
 
 }
-
-
