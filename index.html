@@ -41,10 +41,12 @@
 
             <form method="post" action="#" id="formulaire2">
                 <p class="label0">Filtres</p>
-                <button class="economique label3"><i class="fa-solid fa-money-bill-wave"></i>Economique</button>
-                <button class="familial label3"><i class="fa-solid fa-person"></i>Familial</button>
-                <button class="romantique label3"><i class="fa-solid fa-heart"></i>Romantique</button>
-                <button class="animaux label3"><i class="fa-sharp fa-solid fa-dog"></i>Animaux autorisés</button>
+                <div id="conteneurBoutonsFiltres">
+                    <button class="economique label3"><i class="fa-solid fa-money-bill-wave"></i>Economique</button>
+                    <button class="familial label3"><i class="fa-solid fa-person"></i>Familial</button>
+                    <button class="romantique label3"><i class="fa-solid fa-heart"></i>Romantique</button>
+                    <button class="animaux label3"><i class="fa-sharp fa-solid fa-dog"></i>Animaux autorisés</button>
+                </div>
             </form>
 
             <div id="boiteIconeInformation">  <!-- Icone infos bulle -->
@@ -58,8 +60,9 @@
         <!-- Affichage des resultats de la recherche dhebergements -->
         <main class="affichageResultatHebergementsEtLesPlusPopulaires">
             <section class="fond1GrisArrondi">
-
-                <h1 class="label1 position">Hébergements à Marseille</h1>
+                <div id="ConteneurHebergementsAMarseille">
+                    <h2 class="label1 position newPosition">Hébergements à Marseille</h2>
+                </div>
                 <!-- Affichage de 6 cartes -->
                 <div id="conteneurDesCartesHebergements">
                     <div class="fond1BlancArrondi">
@@ -148,7 +151,7 @@
             <!-- Affichage des resultats les plus populaires -->
             <aside id="fond5GrisArrondi">
                 <div id="enteteLesPlusPopulaires">
-                    <h1 class="label1 position">Les plus populaires</h1>
+                    <h2 class="label1 position newPosition2">Les plus populaires</h2>
                     <i class="fa-solid fa-chart-line position"></i>
                 </div>
                 <div id="conteneurLesPlusPopulaires">
@@ -201,8 +204,10 @@
 
         <!-- Affichage des resultats des activites a Marseille -->
         <section id="conteneurActivitesAMarseille">
-            <h1 class="label1 position2">Activités à Marseille</h1>
-            <div id="conteneurfond2Blanc">
+            <div class="titreActiviteAMarseille">
+                <h2 class="label1 position2">Activités à Marseille</h2>
+            </div>
+                <div id="conteneurfond2Blanc">
                 <div class="fond2BlancArrondi"><img src="./Images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Un petit tour en bateau ?" class="scaleDeLimage2"><p class="label6">Vieux-Port</p></div>
                 <div class="fond2BlancArrondi"><img src="./Images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="A la decouverte d'un incontournable" class="scaleDeLimage2"><p class="label6">Fort de Pomègues</p></div>
                 <div class="fond2BlancArrondi"><img src="./Images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc qui va vous sortir des sentiers battus" class="scaleDeLimage2"><p class="label6 position14">Parc national des Calanques</p></div>

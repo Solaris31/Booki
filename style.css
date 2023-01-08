@@ -176,10 +176,9 @@ form{
 
 .fa-magnifying-glass{
     color:#FFFFFF !important;
-    width: 20px;
     height: 20px;
     position:relative;
-    left: 270px;
+    left: 272px;
     top:-40px;
 }
 
@@ -189,15 +188,16 @@ form{
     font-size: 18px;
     line-height: 21px;
     color: #000000;
-    width: 3em;
+    width: 54px;
+    margin-right:12px;
 }
 
 #formulaire2{
-    width: 46em;
     display:flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: auto;
 }
 
 
@@ -219,16 +219,16 @@ form{
     color:#0065FC;
 }
 .economique{
-    width: 175px;
+    width: 151px;
 }
 .familial{
-    width: 130px;
+    width: 106px;
 }
 .romantique{
-    width: 175px;
+    width: 150px;
 }
 .animaux{
-    width: 226px;
+    width: 207px;
 }
 
 .fa-money-bill-wave, .fa-person, .fa-heart, .fa-dog{
@@ -396,7 +396,7 @@ form{
     overflow-y: hidden;
     justify-content: space-between;
     flex-wrap: wrap;
-    height: 500px;
+    height: 460px;
 }
 
 .label5{
@@ -425,6 +425,7 @@ form{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+    overflow-x: hidden;
     height: 498px;
 }
 
@@ -504,7 +505,7 @@ form{
 
 .fond5BlancArrondi{
     display:flex;
-    flex:row;
+    flex-direction:row;
     width: 17.5em;
     height: 144px;
     background: #FFFFFF;
@@ -516,6 +517,8 @@ form{
     display:flex;
     flex-direction: column;
     height: 498px;
+    width: 326px;
+    margin: auto;
     justify-content: space-between;
     align-items: center;
 }
@@ -589,33 +592,31 @@ form{
     }
 
     .fond1GrisArrondi{
-        margin-right:0px
+        margin-bottom: 53px;
     }
 
     #conteneurLesPlusPopulaires{
+        overflow: hidden;
         flex-direction:row;
+        align-items: flex-start;
+        padding-right: 50px;
+        width: auto;
     }
 
     #enteteLesPlusPopulaires{
         width: auto;
-
     }
 
-    .fond1GrisArrondi{
-        margin-bottom: 53px;
-    }
 
     #fond5GrisArrondi{
         height: 278px;
+        overflow-x: hidden;
+        margin-right:50px;
     }
 
     .position{
         height: 26px;
         margin:34px 0 26px 0;
-    }
-
-    #conteneurLesPlusPopulaires{
-        align-items: flex-start;
     }
 
     .conteneurEtoiles{
@@ -624,6 +625,7 @@ form{
 
     .fond5BlancArrondi{
         width: 252px;
+        margin-right: 23px;
     }
 
     .scaleDeLimage3{
@@ -654,11 +656,15 @@ form{
     }
 
     #conteneurActivitesAMarseille{
-        margin-top: 70px;
+        margin-right: 50px;;
+        overflow:hidden;
+        margin-top: 60px;
+        margin-right:52px;
+        height: 325px;
     }
 
     #conteneurfond2Blanc{
-        height: 267px;
+        height: 280px;
     }
 
     .fond2BlancArrondi{
@@ -674,8 +680,15 @@ form{
     .position14{
         margin-top: 6px;
     }
-}
 
+    #fond3GrisCarre{
+        margin-right:52px;
+    }
+
+    #selectionHebergementOuActivites{
+        margin-right:52px;
+    }
+}
 
 
 /* Breakpoint pour telephones portables */
@@ -722,7 +735,7 @@ form{
     }
 
     .label1{
-        margin-left: 20px;
+        margin: 0 20px 0 20px;
     }
 
     .label2{
@@ -764,6 +777,189 @@ form{
 
     .fa-magnifying-glass{
         visibility: visible;
+    }
+
+    .economique, .familial, .romantique, .animaux{
+        width: 150px;
+    }
+
+    .economique, .familial, .romantique, .animaux{
+        display:flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left:12px;
+        height: 50px;
+        font-weight: 700;
+        font-size: 11px;
+        line-height: 13px;
+        margin-bottom:17px;
+    }
+
+    #formulaire2{
+        flex-direction:column;
+        align-items: flex-start;
+        margin: 0 20px 0 20px;
+        height: auto;
+    }
+
+    .label0{
+        margin-bottom:15px;
+    }
+
+    #conteneurBoutonsFiltres{
+        display:flex;
+        flex-wrap: wrap;
+        width: auto;
+        justify-content: space-between;
+        margin-bottom: 26px;
+    }
+
+    #boiteIconeInformation{
+        left: 13px;
+    }
+
+    #label3{
+        margin-left: 53px;
+        margin-bottom: 37px;
+    }
+
+    .affichageResultatHebergementsEtLesPlusPopulaires{
+        margin: 0;
+        flex-direction:column-reverse;
+    }
+
+    #fond5GrisArrondi{
+        border-radius: 0;
+        padding: 0 20px 0 20px;
+        height: 580px;
+        margin-bottom: 26px;
+    }
+
+    #enteteLesPlusPopulaires{
+        width: auto;
+        height: 54px;
+        height: 26px;
+    }
+
+    .fa-chart-line{
+        margin-top:0;
+    }
+
+
+    #conteneurHebergementsAMarseille{
+        display:flex;
+        margin: auto;
+        width: auto;
+    }
+
+    .newPosition{
+        width: 270px;
+        margin:auto;
+    }
+
+    .fond5BlancArrondi{
+        margin: 0 20px 11px 20px;
+        width: 334px;
+    }
+
+    #conteneurLesPlusPopulaires{
+        justify-content: flex-start;
+    }
+    
+    .fond1GrisArrondi{
+        background: #FFFFFF;
+        margin-right: 0;
+        margin:auto;
+        width: 376px;
+        padding: 0 20px 0 20px;
+        height: 1325px;
+        align-items: center;
+        margin-bottom: 75px;
+    }
+
+    .fa-chart-line{
+        padding-right:20px;
+    }
+
+
+    #enteteLesPlusPopulaires{
+        width: 326px;
+        margin: auto;
+    }
+
+    #conteneurDesCartesHebergements{
+        justify-content: space-around;
+        height: 1300px;
+
+
+    }
+
+    .fond1BlancArrondi{
+        width: 335px;
+        margin-bottom: 12px;
+        height: 199px;
+    }
+
+    .scaleDeLimage{
+        width: 335px;
+    }
+
+    .position{
+        margin:0;
+        padding: 0;
+    }
+
+    .label5{
+        display:none;
+    }
+
+    #conteneurfond2Blanc{
+        flex-direction:column;
+        overflow:visible;
+        align-items: center;
+        height: 932px;
+        padding-bottom: 80px;
+    }
+
+    #conteneurActivitesAMarseille{
+        overflow: visible;
+        height: 936px;
+
+        width: 382px;
+        margin: auto;
+    }
+
+
+    .position2{
+        width: 212px;
+        padding-bottom: 24px;
+    }
+
+    .fond2BlancArrondi{
+        width: 334px;
+        height: 190px;
+        margin-bottom: 24px;
+    }
+
+    .scaleDeLimage2{
+        height: 134px;
+        width: 334px;
+    }
+
+    #fond3GrisCarre{
+        width: auto;
+        display:flex;
+        flex-direction:column;
+        padding: 0 20px 0 20px;
+        justify-content: space-around;
+        height: 451px;
+    }
+
+    .titreActiviteAMarseille{
+        display:flex;
+        justify-content: flex-start;
+        padding: 0 20px 0 0;
+        width: 312px;
     }
 
 }
