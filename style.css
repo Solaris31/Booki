@@ -438,7 +438,7 @@ form{
 }
 
 .fond2BlancArrondi{
-    width:15.1em;
+    width:182px;
     height: 444px;
     border-radius: 20px;
     box-shadow: 5px 5px 10px 3px rgba(70, 70, 87, 0.1);
@@ -507,7 +507,7 @@ form{
 .fond5BlancArrondi{
     display:flex;
     flex-direction:row;
-    width: 17.5em;
+    width: 326px;
     height: 144px;
     background: #FFFFFF;
     border-radius: 20px;
