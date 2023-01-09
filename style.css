@@ -309,7 +309,7 @@ form{
 
 
 .fond1BlancArrondi{
-    width: 12.3em;
+    width: 246px;
     height: 203px;
     background-color:#FFFFFF;
     border-radius: 20px;
@@ -321,7 +321,7 @@ form{
 
 .scaleDeLimage{
     border: 5px solid #FFFFFF;
-    width: 12.3em;
+    width: 246px;
     height: 124px;
     border-radius: 20px 20px 0 0;
     object-fit:cover;
@@ -438,7 +438,7 @@ form{
 }
 
 .fond2BlancArrondi{
-    width:182px;
+    width:302px;
     height: 444px;
     border-radius: 20px;
     box-shadow: 5px 5px 10px 3px rgba(70, 70, 87, 0.1);
@@ -446,7 +446,7 @@ form{
 
 .scaleDeLimage2{
     height: 388px;
-    width: 15.1em;
+    width:302px;
     object-fit:cover;
     border-radius: 20px 20px 0 0;
 }
@@ -604,6 +604,11 @@ form{
         width: auto;
     }
 
+    .label6{
+        width: 182px;
+    }
+
+
     #enteteLesPlusPopulaires{
         width: auto;
     }
@@ -669,7 +674,7 @@ form{
     }
 
     .fond2BlancArrondi{
-        width:9.1em;
+        width:182px;
         height: 267px;
     }
 
@@ -773,7 +778,7 @@ form{
         width: 49px;
         height: 49px;
         position:relative;
-        left:14.9em;
+        left:256px;
     }
 
     .fa-magnifying-glass{
