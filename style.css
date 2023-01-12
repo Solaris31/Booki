@@ -20,7 +20,7 @@ header{
 }
 
 #logo2{
-    width:3.1em;
+    width:50px;
     height:19px;
     margin-top: 44px;
 }
@@ -232,7 +232,7 @@ form{
 }
 
 .fa-money-bill-wave, .fa-person, .fa-heart, .fa-dog{
-    padding-right:12px;
+    padding-right:8px;
 }
 
 
@@ -278,7 +278,6 @@ form{
 .fond3GrisArrondi{
     background: #F2F2F2;
     border-radius: 20px;
-    /* width: 420px; */
     height: 625px;
 }
 
@@ -599,9 +598,13 @@ form{
     #conteneurLesPlusPopulaires{
         overflow: hidden;
         flex-direction:row;
-        align-items: flex-start;
-        padding-right: 50px;
         width: auto;
+        margin: 0;
+        height: 175px;
+    }
+
+    #conteneurLesPlusPopulaires a{
+        display:flex;
     }
 
     .label6{
@@ -630,9 +633,11 @@ form{
     }
 
     .fond5BlancArrondi{
-        width: 252px;
         margin-right: 23px;
+        flex-shrink:1 1 252px;
+        width: auto;
     }
+
 
     .scaleDeLimage3{
         width: 106px;
@@ -799,6 +804,7 @@ form{
         font-size: 11px;
         line-height: 13px;
         margin-bottom:17px;
+        width: 190px;
     }
 
     #formulaire2{
@@ -827,6 +833,7 @@ form{
     #label3{
         margin-left: 53px;
         margin-bottom: 37px;
+        font-style: normal;
     }
 
     .affichageResultatHebergementsEtLesPlusPopulaires{
@@ -898,6 +905,13 @@ form{
         height: 1300px;
 
 
+    }
+
+    .label3{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 700;
     }
 
     .fond1BlancArrondi{
