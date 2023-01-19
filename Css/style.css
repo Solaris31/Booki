@@ -13,7 +13,9 @@ body{
     width: 100%;
 }
 
-
+a{
+    text-decoration:none;
+}
 
 
 
@@ -44,7 +46,6 @@ header{
 #hebergements, #activites{
     font-size:16px;
     color:#000000;
-    text-decoration:none;
     border-top: 2px solid transparent;
     padding-top:40px;
 }
@@ -556,7 +557,7 @@ form{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 65px;
+    height: 40px;
 }
 
 .fond5BlancArrondi{
@@ -671,7 +672,7 @@ form{
         flex-direction:row;
         width: auto;
         margin: 0;
-        height: 175px;
+        height:240px;
     }
 
     #conteneurLesPlusPopulaires a{
@@ -948,6 +949,7 @@ form{
         display:flex;
         margin: 0;
         width: 100%;
+        margin-bottom: 20px;
     }
 
     .newPosition{
