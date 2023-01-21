@@ -396,6 +396,8 @@ form{
     display:flex;
     flex-direction:row;
     margin-left:8px;
+    position:absolute;
+    bottom: 12px;
 }
 
 
